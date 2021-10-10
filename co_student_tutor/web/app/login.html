@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CST - Login </title>
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+	  
+	  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/logo-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/logo-icon.png">
+        
+        <style>
+#text {display:none;color:red}
+</style>
+  </head>
+  <body>
+  <section class="w3l-login">
+  <div class="w3l-form-36-mian">
+    <div class="container">
+      <div class="logo text-center">
+        <a class="brand-logo" href="index.html"><img src="assets/images/logo-icon.png" alt="" />CST</a>
+        <!-- if logo is image enable this   
+                <a class="brand-logo" href="#index.html">
+                  <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> -->
+      </div>
+      <div class="form-inner-cont">
+		  <center><img height="100px" src="assets/images/fingerprint.png"/></center>
+        <h6>Login here</h6>
+        <form action="log.php" method="post" class="signin-form">
+          <div class="form-input">
+              <input type="text" name="phone" placeholder="Phone No." maxlength="11" required="" autofocus>
+          </div>
+          <div class="form-input">
+              <input type="password" name="password" id="myInput" placeholder="Password" required="">
+          </div>
+          <label class="check-remaind">
+              <p id="text">WARNING! Caps lock is ON.</p>
+            <!--<input type="checkbox">
+            <span class="checkmark"></span>
+            <p class="remember">Remember me</p>-->
+
+          </label>
+
+          <button type="submit" class="btn btn-primary theme-button mt-4">Log in</button>
+          <div class="new-signup">
+            <!--<a href="#reload" class="signuplink">Forgot username or password?</a>-->
+
+          </div>
+        </form>
+        <p class="signup">Don’t have account yet? <a href="signup.html" class="signuplink">Get it now</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+      
+      <!--TO DETECT CAPS LOCK-->
+      <script>
+            var input = document.getElementById("myInput");
+            var text = document.getElementById("text");
+            input.addEventListener("keyup", function(event) {
+
+            if (event.getModifierState("CapsLock")) {
+                text.style.display = "block";
+              } else {
+                text.style.display = "none"
+              }
+            });
+</script>
+
+</body>
+
+</html>
