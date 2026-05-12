@@ -140,7 +140,7 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-20 right-32 w-48 h-32 bg-brand-green rounded-3xl shadow-xl -rotate-12 z-0 border-4 border-white"
+            className="absolute bottom-[320px] left-0 w-48 h-32 bg-brand-green rounded-3xl shadow-xl rotate-0 z-30 border-4 border-white"
           />
           <motion.div
             animate={{ y: [0, 20, 0] }}
