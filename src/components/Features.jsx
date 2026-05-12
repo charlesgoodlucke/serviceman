@@ -19,7 +19,7 @@ const Features = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="bg-brand-orange rounded-[3rem] p-12 md:p-24 flex flex-col md:flex-row items-center gap-12 text-white h-[600px] overflow-hidden relative"
+            className="bg-brand-orange rounded-[3rem] p-12 md:p-24 flex flex-row items-center gap-12 text-white h-[600px] overflow-hidden relative"
           >
             <div className="max-w-md z-10">
               <h3 className="text-4xl md:text-5xl font-display font-bold mb-6 leading-tight">
@@ -33,7 +33,7 @@ const Features = () => {
               <motion.div
                 whileHover={{ rotate: 8, scale: 1.05 }}
                 transition={{ duration: 0.5 }}
-                className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[520px] bg-white rounded-[3rem] shadow-2xl rotate-12 border-8 border-white/20 flex flex-col items-center py-12 px-8"
+                className="absolute right-0 top-1/2 -translate-y-1/2 w-[300px] h-[520px] bg-white rounded-[3rem] shadow-2xl rotate-6 border-8 border-white/20 flex flex-col items-center py-12 px-8"
               >
                 <div className="w-32 h-32 rounded-full border-4 border-gray-100 shadow-xl overflow-hidden mb-6">
                   <img src={erikHd} alt="Erik" className="w-full h-full object-cover" />
@@ -64,7 +64,7 @@ const Features = () => {
             <p className="text-2xl md:text-3xl text-gray-500">Take your service business to the next level</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 gap-16">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}

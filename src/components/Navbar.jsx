@@ -6,7 +6,6 @@ import logoWhite from '../assets/logo-white.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,22 +29,12 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Nav */}
-
-
-        <div className="hidden md:flex items-center gap-4">
+        <div className="flex items-center gap-4">
           <a href="#download" className={`px-6 py-3 rounded-full font-bold transition-all ${scrolled ? 'bg-brand-dark text-white hover:bg-black' : 'bg-white text-brand-primary hover:bg-gray-100'}`}>
             Get the app
           </a>
         </div>
-
-        {/* Mobile Toggle */}
-        <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
       </div>
-
-      {/* Mobile Nav */}
-
     </nav>
   );
 };

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Testimonials = () => {
   return (
-    <section className="py-24 px-6 bg-white rounded-[3rem] mt-32 mx-4 max-w-7xl lg:mx-auto">
+    <section className="py-24 px-6 bg-white rounded-[3rem] mt-32 mx-auto max-w-7xl">
       <div className="text-center mb-16">
         <h2 className="text-5xl md:text-7xl font-display font-bold tracking-tight mb-4 text-brand-dark">Testimonials</h2>
         <p className="text-2xl md:text-3xl text-gray-500 max-w-2xl mx-auto">
@@ -10,7 +10,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-3 gap-8">
         {[1, 2, 3].map((i) => (
           <motion.div
             key={i}

@@ -15,7 +15,7 @@ const Bookings = () => {
           <p className="text-2xl md:text-3xl text-gray-500">That's all you need to do.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
+        <div className="grid grid-cols-2 gap-12 mb-8">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -95,7 +95,7 @@ const Bookings = () => {
             </h3>
             <p className="text-xl text-gray-400">Escrow payments protect your money.</p>
           </div>
-          <div className="hidden md:block w-72 h-72 bg-white/5 rounded-full absolute right-12 border border-white/10 group-hover:scale-110 transition-transform duration-500 flex items-center justify-center p-8 overflow-hidden">
+          <div className="w-72 h-72 bg-white/5 rounded-full absolute right-12 border border-white/10 group-hover:scale-110 transition-transform duration-500 flex items-center justify-center p-8 overflow-hidden">
             <img src={escrowShield} alt="Escrow Protection" className="w-full h-full object-contain" />
           </div>
         </motion.div>

@@ -9,7 +9,7 @@ const TrustSafety = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-primary/10 rounded-full blur-[150px] -z-10" />
 
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-2 gap-16 items-center">
           
           {/* Visual Side */}
           <motion.div 
@@ -80,7 +80,7 @@ const TrustSafety = () => {
               We don't just connect you with anyone. Every service provider on ServiceMan goes through a rigorous vetting process to ensure your peace of mind.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-2 gap-8">
               <div>
                 <div className="w-12 h-12 rounded-xl bg-brand-primary/20 text-brand-primary flex items-center justify-center mb-4">
                   <ShieldCheck size={24} />

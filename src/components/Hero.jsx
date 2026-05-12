@@ -7,16 +7,16 @@ import { Apple, Play, MapPin, Wrench, Calendar, Headphones, Home, ClipboardList,
 const Hero = () => {
   return (
     <section className="bg-brand-primary text-white pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden rounded-b-[3rem]">
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 gap-16 items-center">
 
         {/* Text Content */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-xl z-10"
+          className="max-w-lg z-10"
         >
-          <h1 className="text-6xl md:text-[80px] font-display font-bold leading-[1.05] tracking-tight mb-6">
+          <h1 className="text-5xl md:text-[80px] font-display font-bold leading-[1.05] tracking-tight mb-6">
             Got Something <br /> to Fix?
           </h1>
 
@@ -51,7 +51,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Visuals - Live App UI Mockup */}
-        <div className="relative h-[600px] lg:h-[700px] flex items-center justify-center lg:justify-end hidden md:flex">
+        <div className="relative w-full h-[700px] flex items-center justify-end">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -140,12 +140,12 @@ const Hero = () => {
           <motion.div
             animate={{ y: [0, -15, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-20 right-64 w-48 h-32 bg-brand-green rounded-3xl shadow-xl -rotate-12 z-0 border-4 border-white"
+            className="absolute top-20 right-32 w-48 h-32 bg-brand-green rounded-3xl shadow-xl -rotate-12 z-0 border-4 border-white"
           />
           <motion.div
             animate={{ y: [0, 20, 0] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-            className="absolute bottom-32 -left-10 w-56 h-36 bg-brand-orange rounded-3xl shadow-xl rotate-6 z-20 border-4 border-white"
+            className="absolute bottom-32 left-0 w-56 h-36 bg-brand-orange rounded-3xl shadow-xl rotate-6 z-20 border-4 border-white"
           />
         </div>
 

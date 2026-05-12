@@ -36,9 +36,9 @@ const HowItWorks = () => {
 
         <div className="relative">
           {/* Timeline Line */}
-          <div className="hidden lg:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-brand-primary/10 via-brand-primary to-brand-secondary/10 -translate-y-1/2" />
+          <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-brand-primary/10 via-brand-primary to-brand-secondary/10 -translate-y-1/2" />
 
-          <div className="grid lg:grid-cols-3 gap-12 lg:gap-8">
+          <div className="grid grid-cols-3 gap-8">
             {steps.map((step, index) => (
               <motion.div 
                 key={index}
@@ -56,11 +56,11 @@ const HowItWorks = () => {
                 </div>
 
                 {/* Timeline Node */}
-                <div className="hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#151520] border-4 border-brand-primary items-center justify-center z-20 font-bold font-display shadow-[0_0_20px_rgba(128,70,241,0.5)]">
+                <div className="flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-[#151520] border-4 border-brand-primary items-center justify-center z-20 font-bold font-display shadow-[0_0_20px_rgba(128,70,241,0.5)]">
                   {step.number}
                 </div>
 
-                <div className="text-center mt-12 lg:mt-24">
+                <div className="text-center mt-24">
                   <h3 className="text-2xl font-display font-bold mb-4">{step.title}</h3>
                   <p className="text-white/70">{step.description}</p>
                 </div>

@@ -42,7 +42,7 @@ const Stats = () => {
       <div className="absolute top-0 left-1/4 w-full h-full bg-brand-primary/5 blur-[100px] -z-10" />
       
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-6">
+        <div className="grid grid-cols-4 gap-6">
           <StatCounter value={150} label="Services Completed" suffix="K+" />
           <StatCounter value={10} label="Verified Providers" suffix="K+" />
           <StatCounter value={50} label="Cities Covered" suffix="+" />

@@ -27,7 +27,7 @@ const DownloadCTA = () => {
             Join thousands of users who trust ServiceMan for their everyday repairs and tasks. Download the app now and get 20% off your first service.
           </p>
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-row justify-center gap-4">
             <button className="flex items-center justify-center gap-3 px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition-transform">
               <Apple size={24} />
               <div className="text-left leading-tight">
