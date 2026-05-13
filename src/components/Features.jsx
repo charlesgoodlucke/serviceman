@@ -23,9 +23,9 @@ const Features = () => {
           >
             <div className="max-w-xs md:max-w-md z-10">
               <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6 leading-tight">
-                Connect with the best handymen in your area. You're in complete control.
+                Connect with the best handymen in your area. You're in <br />complete control.
               </h3>
-              <p className="text-base sm:text-lg md:text-xl text-white/80">Track reviews, verify identities, and request services safely.</p>
+              <p className="text-base sm:text-lg md:text-xl text-white/80">Track reviews, verify identities, <br />and request services safely.</p>
             </div>
 
             <div className="flex-1 w-full h-48 sm:h-64 md:h-80 lg:h-full relative">
