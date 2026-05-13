@@ -17,20 +17,20 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-sm py-4 text-brand-dark' : 'bg-transparent py-6 text-white'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
 
-        <a href="#" className="flex items-center gap-0 text-2xl font-display font-bold">
+        <a href="#" className="flex items-center gap-0 text-lg sm:text-2xl font-display font-bold flex-shrink-0">
           <img
             src={scrolled ? logoPurple : logoWhite}
             alt="ServiceMan"
-            className="h-8 w-auto transition-all duration-300"
+            className="h-6 sm:h-8 w-auto transition-all duration-300"
           />
-          <span className={`-ml-0 ${scrolled ? 'text-brand-primary' : 'text-white'}`}>erviceMan</span>
+          <span className={`-ml-0 hidden sm:inline ${scrolled ? 'text-brand-primary' : 'text-white'}`}>erviceMan</span>
         </a>
 
         {/* Desktop Nav */}
-        <div className="flex items-center gap-4">
-          <a href="#download" className={`px-6 py-3 rounded-full font-bold transition-all ${scrolled ? 'bg-brand-dark text-white hover:bg-black' : 'bg-white text-brand-primary hover:bg-gray-100'}`}>
+        <div className="flex items-center gap-2 sm:gap-4">
+          <a href="#download" className={`px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base rounded-full font-bold transition-all ${scrolled ? 'bg-brand-dark text-white hover:bg-black' : 'bg-white text-brand-primary hover:bg-gray-100'}`}>
             Get the app
           </a>
         </div>

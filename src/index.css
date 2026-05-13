@@ -4,11 +4,16 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @layer base {
   body {
     @apply bg-brand-background text-brand-dark font-sans antialiased overflow-x-hidden selection:bg-brand-primary/30 selection:text-brand-primary;
+  }
+  
+  * {
+    @apply box-border;
   }
 }
 
@@ -21,6 +26,27 @@ html {
   }
   .animate-float-delayed {
     animation: float 6s ease-in-out 3s infinite;
+  }
+  
+  /* Responsive typography helpers */
+  .text-responsive-xl {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+  
+  .text-responsive-2xl {
+    @apply text-lg sm:text-2xl md:text-3xl lg:text-3xl;
+  }
+  
+  .text-responsive-3xl {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .text-responsive-4xl {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  .text-responsive-5xl {
+    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl;
   }
 }
 
@@ -52,4 +78,28 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #9CA3AF;
+}
+
+/* Ensure images scale properly on mobile */
+img {
+  @apply max-w-full h-auto;
+}
+
+/* Mobile-first responsive container */
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    @apply px-6;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    @apply px-8;
+  }
 }

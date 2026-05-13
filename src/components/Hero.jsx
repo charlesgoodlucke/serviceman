@@ -6,8 +6,8 @@ import { Apple, Play, MapPin, Wrench, Calendar, Headphones, Home, ClipboardList,
 
 const Hero = () => {
   return (
-    <section className="bg-brand-primary text-white pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden rounded-b-[3rem]">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 gap-16 items-center">
+    <section className="bg-brand-primary text-white pt-24 md:pt-32 lg:pt-64 pb-12 md:pb-20 lg:pb-32 overflow-hidden rounded-b-2xl sm:rounded-b-3xl lg:rounded-b-[3rem]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
 
         {/* Text Content */}
         <motion.div
@@ -16,47 +16,47 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-lg z-10"
         >
-          <h1 className="text-5xl md:text-[80px] font-display font-bold leading-[1.05] tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[80px] font-display font-bold leading-[1.05] tracking-tight mb-4 md:mb-6">
             Got Something <br /> to Fix?
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 mb-10 leading-snug">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 md:mb-10 leading-snug">
             …with super fast requests, verified handymen, real-time tracking, excellent home services, secure payments, and property maintenance; ServiceMan makes managing your home stress-free and your life easier.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 mb-12">
+          <div className="flex flex-col gap-4 md:gap-6 mb-8 md:mb-12">
             <div className="flex flex-col">
-              <span className="font-bold mb-3 uppercase tracking-wider text-sm opacity-80">Get started by downloading the app</span>
-              <div className="flex gap-4">
-                <a href="#" className="flex items-center gap-2 bg-black hover:bg-black/80 text-white px-6 py-3.5 rounded-2xl transition-colors w-40">
-                  <Apple size={24} />
+              <span className="font-bold mb-2 md:mb-3 uppercase tracking-wider text-xs sm:text-sm opacity-80">Get started by downloading the app</span>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a href="#" className="flex items-center gap-2 bg-black hover:bg-black/80 text-white px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-2xl transition-colors w-full sm:w-auto justify-center sm:justify-start">
+                  <Apple size={20} className="sm:w-6 sm:h-6" />
                   <div className="flex flex-col text-left">
-                    <span className="text-[10px] leading-tight opacity-80">App Store</span>
+                    <span className="text-[9px] sm:text-[10px] leading-tight opacity-80">App Store</span>
                   </div>
                 </a>
-                <a href="#" className="flex items-center gap-2 bg-black hover:bg-black/80 text-white px-6 py-3.5 rounded-2xl transition-colors w-40">
-                  <Play size={24} fill="currentColor" />
+                <a href="#" className="flex items-center gap-2 bg-black hover:bg-black/80 text-white px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-2xl transition-colors w-full sm:w-auto justify-center sm:justify-start">
+                  <Play size={20} className="sm:w-6 sm:h-6" fill="currentColor" />
                   <div className="flex flex-col text-left">
-                    <span className="text-[10px] leading-tight opacity-80">Google Play</span>
+                    <span className="text-[9px] sm:text-[10px] leading-tight opacity-80">Google Play</span>
                   </div>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="text-sm font-medium opacity-80 mt-12 flex flex-col gap-1">
+          <div className="text-xs sm:text-sm font-medium opacity-80 mt-6 md:mt-12 flex flex-col gap-1">
             <p>ServiceMan is licensed by local authorities as a trusted home services marketplace.</p>
             <p>Providers insured by top partners.</p>
           </div>
         </motion.div>
 
         {/* Visuals - Live App UI Mockup */}
-        <div className="relative w-full h-[700px] flex items-center justify-end">
+        <div className="relative w-full h-96 sm:h-[500px] md:h-[600px] lg:h-[700px] flex items-center justify-center lg:justify-end">
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-            className="relative w-[320px] h-[650px] bg-[#F8F9FA] rounded-[3rem] border-8 border-black shadow-2xl overflow-hidden z-10 flex flex-col"
+            className="relative w-56 sm:w-72 md:w-80 lg:w-[320px] h-96 sm:h-[500px] md:h-[580px] lg:h-[650px] bg-[#F8F9FA] rounded-2xl sm:rounded-3xl lg:rounded-[3rem] border-4 sm:border-6 lg:border-8 border-black shadow-2xl overflow-hidden z-10 flex flex-col"
           >
             {/* App Header */}
             <div className="absolute top-0 w-full p-6 flex justify-between items-center z-20">
